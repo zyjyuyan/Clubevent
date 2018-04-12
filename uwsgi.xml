@@ -1,12 +1,12 @@
 <uwsgi>
-    <socket>/var/run/uwsgi_clubevent.sock</socket>
+    <socket>/var/run/uwsgi_Clubevent.sock</socket>
     <chmod-socket>775</chmod-socket>
     <chown-socket>www-data:www-data</chown-socket>
     <chdir>/home/zyj/Clubevent</chdir>
     <uid>www-data</uid>
     <gid>www-data</gid>
     <pythonpath>/home/zyj/Clubevent</pythonpath>
-    <module>clubevent.wsgi:application</module>
+    <module>Clubevent.wsgi:application</module>
     <master/>
     <listen>128</listen>
     <processes>8</processes>
