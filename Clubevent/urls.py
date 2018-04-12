@@ -17,6 +17,9 @@ from django.contrib import admin
 from django.conf.urls import url, include  # Django 1.x
 from django.urls import path, re_path  # Django 2.0
 
+import main.views.index
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     # index
