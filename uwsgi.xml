@@ -5,7 +5,7 @@
     <chdir>/home/zyj/Clubevent</chdir>
     <uid>www-data</uid>
     <gid>www-data</gid>
-    <pythonpath>/home/zyj/clubevent</pythonpath>
+    <pythonpath>/home/zyj/Clubevent</pythonpath>
     <module>clubevent.wsgi:application</module>
     <master/>
     <listen>128</listen>
