@@ -16,12 +16,17 @@ Including another URLconf
 from django.contrib import admin
 from django.conf.urls import url, include  # Django 1.x
 from django.urls import path, re_path  # Django 2.0
+from django.contrib.auth import views as auth_views
 
 import main.views.index
+import main.views.user
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     # index
     re_path(r'^$', main.views.index.index, name='index'),
+    url(r'^user/signup$', main.views.user.userSignup),  # POST
+    url(r'^user/signin$', auth_views.LoginView.as_view(template_name='user/signin.html'), name='login'),  # POST
+    url(r'^user/signout$', auth_views.LogoutView.as_view(), name='logout'),
 ]
